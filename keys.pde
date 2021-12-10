@@ -6,6 +6,7 @@ class Dot {
   int lifetime = 1000;
   boolean alive = true;
   float delta;
+  float colours = random(255);
   
   Dot(int _x, int _y, int _size) {
     position = new PVector(_x, _y);
@@ -24,7 +25,7 @@ class Dot {
   
   void draw() {
     noStroke();
-    fill(255);
+    fill(colours);
     ellipse(position.x, position.y, size, size);
   }
   
