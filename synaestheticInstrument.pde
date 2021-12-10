@@ -27,11 +27,13 @@ void draw() {
 }
 
 void mousePressed() {
-  pitch = int(map(mouseY, height, 0, 0, 127));
-  velocity = int(map(mouseX, 0, width, 0, 127));
+  if (mousePressed){
+  pitch = int(map(pmouseY, height, 0, 0, 127));
+  velocity = int(map(pmouseX, 0, width, 0, 127));
   myBus.sendNoteOn(channel, pitch, velocity); // Send a Midi noteOn
   
-  keys.add(new Key(mouseX, mouseY, velocity + 10));
+  keys.add(new Key(pmouseX, pmouseY, velocity + 10));
+  }
 }
 
 void mouseReleased() {

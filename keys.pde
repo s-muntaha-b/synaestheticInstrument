@@ -3,7 +3,7 @@ class Key {
   PVector position;
   float size;
   int life = 0;
-  int lifetime = 5000;
+  int lifetime = 13000;
   boolean alive = true;
   float delta;
   
@@ -29,7 +29,7 @@ class Key {
   }
   
   void draw() {
-    noStroke();
+    stroke(r, g, b);
     fill(r, g, b);
     ellipse(position.x, position.y, size, size);
   }
