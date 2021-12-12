@@ -3,7 +3,7 @@ class Key {
   PVector position;
   float size;
   int life = 0;
-  int lifetime = 13000;
+  int lifetime = 20000;
   boolean alive = true;
   float delta;
   

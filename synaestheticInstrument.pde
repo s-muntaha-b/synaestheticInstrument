@@ -1,8 +1,10 @@
 import themidibus.*;
 
 MidiBus myBus;
+
 int channel = 0;
 int pitch, velocity;
+
 ArrayList<Key> keys;
 
 void setup() {
