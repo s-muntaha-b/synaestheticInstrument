@@ -19,9 +19,9 @@ void draw() {
   background(0);
   
   for (int i=keys.size()-1; i>=0; i--) {
-    Key dot = keys.get(i);
-    if (dot.alive) {
-      dot.run();
+    Key key = keys.get(i);
+    if (key.alive) {
+      key.run();
     } else {
       keys.remove(i);
     }
