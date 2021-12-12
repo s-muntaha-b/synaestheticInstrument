@@ -16,7 +16,7 @@ class Key {
   Key(int _x, int _y, int _size) {
     position = new PVector(_x, _y);
     size = _size;
-    delta = size / 100.0;    
+    delta = size / 80.0;    
     life = millis();
   }
   
