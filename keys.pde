@@ -32,7 +32,7 @@ class Key {
   void draw() {
     stroke(r, g, b);
     fill(r, g, b);
-    rect(position.x, position.y, size, size);
+    arc(position.x, position.y, size, size, PI, TWO_PI); // Referenced from Processing Website (https://processing.org/examples/shapeprimitives.html)
   }
   
   void run() {

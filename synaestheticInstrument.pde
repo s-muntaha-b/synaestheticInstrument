@@ -2,8 +2,9 @@ import themidibus.*;
 
 MidiBus myBus;
 
+int velocity, pitch;
 int channel = 0;
-int pitch, velocity;
+
 
 ArrayList<Key> keys;
 
