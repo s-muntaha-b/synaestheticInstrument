@@ -1,1 +1,2 @@
 # synaestheticInstrument
+Although this project is simpler-looking then my other ones, I really liked how this one came out. It feels similar to my very first exercise, a circle drawing tool, and yet, it is so much more. From learning how to input and use sound, change colours of shapes, create classes and more, this project feels like a nice culmination of what I've learnt. Thanks for the great semester! :)
