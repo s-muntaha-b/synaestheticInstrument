@@ -25,7 +25,7 @@ class Key {
     
     if (alive) {
       position.y += delta;
-      if (millis() > life + lifetime) alive = false;
+      if (millis() > life + lifetime) alive = false; // Referenced from class material
     }
   }
   
