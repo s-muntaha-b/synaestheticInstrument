@@ -25,14 +25,14 @@ class Key {
     
     if (alive) {
       position.y += delta;
-      if (millis() > life + lifetime) alive = false;
+      if (millis() > life + lifetime) alive = false; // Referenced from class material
     }
   }
   
   void draw() {
     stroke(r, g, b);
     fill(r, g, b);
-    arc(position.x, position.y, size, size, PI, TWO_PI); // Referenced from Processing Website (https://processing.org/examples/shapeprimitives.html)
+    arc(position.x, position.y, size, size, PI, TWO_PI); // Referenced from Processing Website (
   }
   
   void run() {
