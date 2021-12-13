@@ -1,22 +1,23 @@
 class Key {
 
-  PVector position;
-  float size;
-  int life = 0;
-  int lifetime = 20000;
-  boolean alive = true;
-  float delta;
+  PVector position, gif;
   
+  float size;
+  float delta;
   float r = random(255);
   float g = random(255);
   float b = random(255);
  // r g b referenced from https://happycoding.io/examples/processing/for-loops/random-colors
-
   
+  int life = 0;
+  int lifetime = 50000;
+  
+  boolean alive = true;
+
   Key(int _x, int _y, int _size) {
     position = new PVector(_x, _y);
     size = _size;
-    delta = size / 80.0;    
+    delta = size / 75.0;    
     life = millis();
   }
   
@@ -31,7 +32,7 @@ class Key {
   void draw() {
     stroke(r, g, b);
     fill(r, g, b);
-    ellipse(position.x, position.y, size, size);
+    rect(position.x, position.y, size, size);
   }
   
   void run() {
